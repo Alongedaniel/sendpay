@@ -692,7 +692,7 @@
 }
 
 .footer-section {
-  padding: 3rem 0 3rem 9vw;
+  padding: 3rem 5vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -779,7 +779,6 @@
   color: #fff;
   background-color: #6C63FF;
   border-radius: 1rem;
-  margin-right: 1rem;
 }
 
 .footer-section .social {

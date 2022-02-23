@@ -210,7 +210,7 @@
 }
 
 .page-header .hero-image {
-  animation: drop 1.5s cubic-bezier(0.05, 0.74, 0, -1.9) alternate-reverse infinite;
+  animation: drop 1.5s cubic-bezier(0.05, 0.74, 0, -1.9) alternate-reverse 5;
 }
 
 .page-header .hero-image:hover {
@@ -221,9 +221,9 @@
 @media (max-width: 1025px) {
   .page-header {
     -webkit-box-orient: vertical !important;
-    -webkit-box-direction: normal !important;
-        -ms-flex-direction: column !important;
-            flex-direction: column !important;
+    -webkit-box-direction: reverse !important;
+        -ms-flex-direction: column-reverse !important;
+            flex-direction: column-reverse !important;
   }
   .page-header .hero {
     width: 100%;
@@ -393,7 +393,7 @@
 
 .section2 .section2-image {
   width: 50%;
-  animation: drop 1.5s cubic-bezier(0.05, 0.74, 0, -1.9) alternate-reverse infinite;
+  animation: drop 1.5s cubic-bezier(0.05, 0.74, 0, -1.9) alternate-reverse 5;
 }
 
 .section2 .section2-image:hover {

@@ -153,7 +153,7 @@
         }
     }
     .hero-image{
-        animation: drop 1.5s cubic-bezier(0.05, 0.74, 0,-1.9) alternate-reverse infinite ;
+        animation: drop 1.5s cubic-bezier(0.05, 0.74, 0,-1.9) alternate-reverse 5 ;
     }
     .hero-image:hover{
         animation-play-state: paused;
@@ -163,7 +163,7 @@
 
 @media (max-width:1025px) {
     .page-header{
-        flex-direction: column !important;
+        flex-direction: column-reverse !important;
 
 
         .hero{
@@ -291,7 +291,7 @@
 
     .section2-image{
         width: 50%;
-        animation: drop 1.5s cubic-bezier(0.05, 0.74, 0,-1.9) alternate-reverse infinite ;
+        animation: drop 1.5s cubic-bezier(0.05, 0.74, 0,-1.9) alternate-reverse 5 ;
     }
     .section2-image:hover{
         animation-play-state: running;

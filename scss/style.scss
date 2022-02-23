@@ -172,13 +172,14 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            margin-bottom: 10rem;
+
 
 
 
         }
         .hero-image{
             width: 100% !important;
+            margin-bottom: 10rem;
         }
     }
 }
@@ -606,5 +607,6 @@
 @media (max-width: 547px) {
     .footer-logo-title{
         font-size: 16px;
+        margin-left: .5rem !important;
     }
 }

@@ -4,7 +4,7 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .p {
@@ -21,7 +21,7 @@
 }
 
 .border {
-  height: .5vh;
+  height: 0.5vh;
   width: 4vw;
   background-color: black;
   opacity: 0.5;
@@ -60,12 +60,13 @@
 
 .cta .sign-btn:hover {
   color: #fff;
-  background-color: #6C63FF;
+  background-color: #6c63ff;
+  position: relative;
 }
 
 .cta .register-btn {
   color: #fff;
-  background-color: #6C63FF;
+  background-color: #6c63ff;
   font-weight: bold;
   -webkit-transition: 1s ease-in-out;
   transition: 1s ease-in-out;
@@ -118,6 +119,15 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-animation-name: navbar;
+          animation-name: navbar;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  position: relative;
 }
 
 .navbar .logo {
@@ -130,10 +140,10 @@
 }
 
 .navbar .logo .logo-title {
-  color: #6C63FF;
+  color: #6c63ff;
   font-size: 25px;
   font-weight: 600;
-  margin-left: .5rem;
+  margin-left: 0.5rem;
 }
 
 .navbar .nav-links {
@@ -182,6 +192,24 @@
   }
 }
 
+@-webkit-keyframes navbar {
+  0% {
+    top: -200px;
+  }
+  100% {
+    top: 0;
+  }
+}
+
+@keyframes navbar {
+  0% {
+    top: -200px;
+  }
+  100% {
+    top: 0;
+  }
+}
+
 .page-header {
   padding: 5rem 2vw 5rem 5vw;
   display: -webkit-box;
@@ -197,12 +225,22 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-animation: drop 1.5s ease;
-          animation: drop 1.5s ease;
 }
 
 .page-header .hero {
   width: 30%;
+  position: relative;
+  -webkit-animation-name: hero;
+          animation-name: hero;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  opacity: 0;
 }
 
 .page-header .hero .hero-text {
@@ -210,7 +248,18 @@
 }
 
 .page-header .hero-image {
-  animation: drop 1.5s cubic-bezier(0.05, 0.74, 0, -1.9) alternate-reverse 5;
+  -webkit-animation-name: image;
+          animation-name: image;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+  opacity: 0;
+  position: relative;
 }
 
 .page-header .hero-image:hover {
@@ -253,7 +302,51 @@
             flex-direction: column;
   }
   .sign-btn {
-    margin: 1rem 0 0  0 !important;
+    margin: 1rem 0 0 0 !important;
+  }
+}
+
+@-webkit-keyframes hero {
+  0% {
+    left: -500px;
+    opacity: 0;
+  }
+  100% {
+    left: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes hero {
+  0% {
+    left: -500px;
+    opacity: 0;
+  }
+  100% {
+    left: 0;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes image {
+  0% {
+    right: -500px;
+    opacity: 0;
+  }
+  100% {
+    right: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes image {
+  0% {
+    right: -500px;
+    opacity: 0;
+  }
+  100% {
+    right: 0;
+    opacity: 1;
   }
 }
 
@@ -374,6 +467,18 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  position: relative;
+  -webkit-animation-name: hero;
+          animation-name: hero;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  opacity: 0;
 }
 
 .section2 .section2-header {
@@ -386,14 +491,25 @@
 
 .section2 .link {
   text-decoration: none;
-  color: #6C63FF;
+  color: #6c63ff;
   font-size: 22px;
   font-weight: 600;
 }
 
 .section2 .section2-image {
   width: 50%;
-  animation: drop 1.5s cubic-bezier(0.05, 0.74, 0, -1.9) alternate-reverse 5;
+  -webkit-animation-name: image;
+          animation-name: image;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+  opacity: 0;
+  position: relative;
 }
 
 .section2 .section2-image:hover {
@@ -403,6 +519,7 @@
 
 @media (max-width: 980px) {
   .section2 {
+    padding: 3rem 5vw;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -549,7 +666,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #6C63FF;
+  background-color: #6c63ff;
   background-image: url(../images/Group20.png);
   background-position: center;
   background-repeat: no-repeat;
@@ -611,7 +728,7 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 2rem;
-  margin: .5rem;
+  margin: 0.5rem;
 }
 
 .about-us .designers .designer .designer-description {
@@ -642,7 +759,7 @@
 .about-us .designers .designer .designer-details .designer-name .designer-title {
   font-size: 20px;
   font-weight: 600;
-  margin-bottom: .7rem;
+  margin-bottom: 0.7rem;
 }
 
 @media (max-width: 949px) {
@@ -732,7 +849,7 @@
 
 .footer-section .footer-logo .footer-logo-title {
   margin-left: 1rem;
-  color: #6C63FF;
+  color: #6c63ff;
 }
 
 .footer-section .footer-logo .footer-text {
@@ -777,7 +894,7 @@
 
 .footer-section .social-contact {
   color: #fff;
-  background-color: #6C63FF;
+  background-color: #6c63ff;
   border-radius: 1rem;
 }
 
@@ -804,7 +921,7 @@
 @media (max-width: 547px) {
   .footer-logo-title {
     font-size: 16px;
-    margin-left: .5rem !important;
+    margin-left: 0.5rem !important;
   }
 }
 /*# sourceMappingURL=style.css.map */

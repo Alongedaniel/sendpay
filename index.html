@@ -17,6 +17,23 @@
 
 <body>
     <nav class="navbar">
+        <div class="mobile-nav">
+            <div class="bottom-menu">
+                <div class="mobile-logo">
+                    <h1 class="logo-title">Sendpay</h1>
+                </div>
+                <button class="close"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+
+            <div>
+                <ul class="mobile-nav-lists">
+                    <li>Send Money</li>
+                    <li>Receive Money</li>
+                    <li>Languages</li>
+                    <li>How it Works</li>
+                </ul>
+            </div>
+        </div>
         <div class="logo">
             <img src="./images/emojione_e-mail.png" alt="logo">
             <h1 class="logo-title">Sendpay</h1>
@@ -31,7 +48,8 @@
             <button class="btn sign-btn">Sign In</button>
             <button class="btn register-btn">Register</button>
         </div>
-        <i class="fa-regular fa-bars menu-icon"></i>
+        <button class="menu-icon" onclick="menuToggler()"><i class="fas fa-bars"></i></button>
+
     </nav>
     <header class="page-header">
         <div class="hero">
@@ -176,6 +194,8 @@
             </div>
 
             <p class="p footer-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in aliquet justo.</p>
+            <input type="text" class="footer-input">
+            <button class="addlistbutton">click me</button>
         </div>
         <div class="footer-navbar">
             <h1 class="footer-navbar-head">Product</h1>
@@ -215,6 +235,7 @@
             </ul>
         </div>
     </footer>
+    <script src="script.js"></script>
 </body>
 
 </html>

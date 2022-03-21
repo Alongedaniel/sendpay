@@ -7,6 +7,10 @@
   font-family: "Montserrat", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .p {
   color: black;
   opacity: 0.5;
@@ -54,8 +58,8 @@
   background-color: #fff;
   border: 2px solid lightgray;
   font-weight: bold;
-  -webkit-transition: 500ms;
-  transition: 500ms;
+  -webkit-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
 }
 
 .cta .sign-btn:hover {
@@ -169,6 +173,68 @@
   font-weight: bold;
 }
 
+.navbar .menu-icon {
+  background-color: transparent;
+  border: none;
+  font-size: 20px;
+  outline: 0;
+}
+
+.mobile-nav {
+  background-color: #444;
+  color: #fff;
+  position: absolute;
+  left: 0;
+  width: 60%;
+  height: 100vh;
+  top: 0;
+  position: fixed;
+  z-index: 1;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+  -webkit-transform: translate(-1000px);
+          transform: translate(-1000px);
+}
+
+.mobile-nav .bottom-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1rem;
+}
+
+.mobile-nav .mobile-logo {
+  color: #6c63ff;
+}
+
+.mobile-nav .mobile-nav-lists {
+  list-style: none;
+  padding: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1.5rem;
+  font-weight: 900;
+}
+
+.mobile-nav .close {
+  height: 0vh;
+  color: #fff;
+  border: none;
+  font-size: 20px;
+}
+
+.change {
+  background-color: red;
+}
+
 @media (max-width: 1030px) {
   .navbar {
     -webkit-box-pack: justify !important;
@@ -177,16 +243,25 @@
   }
   .nav-links {
     display: none !important;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .nav-links.show {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 
-@media (max-width: 492px) {
+@media (max-width: 600px) {
   .navbar-cta {
     display: none;
   }
 }
 
-@media (min-width: 492px) {
+@media (min-width: 600px) {
   .menu-icon {
     display: none !important;
   }

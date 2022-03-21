@@ -7,6 +7,10 @@
   font-family: "Montserrat", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .p {
   color: black;
   opacity: 0.5;
@@ -48,7 +52,7 @@
     background-color: #fff;
     border: 2px solid lightgray;
     font-weight: bold;
-    transition: 500ms;
+    transition: 1s ease-in-out;
   }
 
   .sign-btn:hover {
@@ -118,6 +122,57 @@
       font-weight: bold;
     }
   }
+
+  .menu-icon {
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    outline: 0;
+  }
+}
+
+.mobile-nav {
+  background-color: #444;
+  color: #fff;
+  position: absolute;
+  left: 0;
+  width: 60%;
+  height: 100vh;
+  top: 0;
+  position: fixed;
+  z-index: 1;
+  transition: all 1s ease;
+  transform: translate(-1000px);
+
+  .bottom-menu {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+  }
+
+  .mobile-logo {
+    color: #6c63ff;
+  }
+
+  .mobile-nav-lists {
+    list-style: none;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    font-weight: 900;
+  }
+
+  .close {
+    height: 0vh;
+    color: #fff;
+    border: none;
+    font-size: 20px;
+  }
+}
+
+.change {
+  background-color: red;
 }
 @media (max-width: 1030px) {
   .navbar {
@@ -125,22 +180,30 @@
   }
   .nav-links {
     display: none !important;
+    flex-direction: column;
+  }
+  .nav-links.show {
+    display: flex;
   }
 }
-@media (max-width: 492px) {
+@media (max-width: 600px) {
   .navbar-cta {
     display: none;
   }
 }
-@media (min-width: 492px) {
+@media (min-width: 600px) {
   .menu-icon {
     display: none !important;
   }
 }
 
-@keyframes navbar{
-  0%{top: -200px;};
-  100%{top: 0;};
+@keyframes navbar {
+  0% {
+    top: -200px;
+  }
+  100% {
+    top: 0;
+  }
 }
 
 .page-header {
@@ -159,7 +222,6 @@
     animation-timing-function: ease;
     animation-delay: 1s;
     opacity: 0;
-    
 
     .hero-text {
       font-size: 20px;
@@ -205,13 +267,25 @@
     margin: 1rem 0 0 0 !important;
   }
 }
-@keyframes hero{
-  0%{left: -500px; opacity: 0;}
-  100%{left: 0; opacity: 1;}
+@keyframes hero {
+  0% {
+    left: -500px;
+    opacity: 0;
+  }
+  100% {
+    left: 0;
+    opacity: 1;
+  }
 }
-@keyframes image{
-  0%{right: -500px; opacity: 0;}
-  100%{right: 0; opacity: 1;}
+@keyframes image {
+  0% {
+    right: -500px;
+    opacity: 0;
+  }
+  100% {
+    right: 0;
+    opacity: 1;
+  }
 }
 
 .howitworks {
